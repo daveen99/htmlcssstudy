@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+
+    <style>
+        /* 형이 클래스orange인 li녀석 (위:형, 아래:동생) */
+        .orange + li {
+            color: orangered;
+        }
+
+        /* 형이 li인 li녀석 */   /* 오뢍쥐는 형이 없기 때문에 적용받지 못한다. */
+        li + li {
+            font-style: italic;
+            font-weight: 700;
+            list-style: none;
+        }
+
+
+        /* 일반 형제 선택자.    형들중에 클래스red가 있는 li녀석.. */
+        .red ~ li {
+            background: tomato;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li class="orange">오뢍쥐</li>
+        <li>에이뽈</li>
+        <li>스트로붸리</li>
+        <li class="orange">오롼지</li>
+        <li class="red">자몬</li>
+        <li>구뤠이프</li>
+        <li>레몬</li>
+    </ul>
+</body>
+</html>

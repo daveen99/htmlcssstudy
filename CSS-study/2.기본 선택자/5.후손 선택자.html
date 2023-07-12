@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 후손 선택자.   
+        띄워쓰기 되어있을때 조상중에 div가 있으면 .. 클래스 orange를..  */
+      div .orange {
+        background: orange;
+      }
+
+      body div em {
+        background: skyblue;
+      }
+
+      .wrap > div {
+        font-style: italic;
+        background: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="change" class="yellow low primary">안녕하세요</h1>
+    <em>빠이팅1</em>
+
+    <div class="wrap">
+      <em>빠이팅2</em>
+      <ul>
+        <li id="apple" class="center reverse">사과</li>
+        <li>포도</li>
+        <li class="orange">오랑쥐</li>
+      </ul>
+
+      <section>
+        <div>당근</div>
+        <p>톰에이뤄</p>
+        <span class="orange">오랑쥐</span>
+        <p>버네이너</p>
+      </section>
+    </div>
+  </body>
+</html>
