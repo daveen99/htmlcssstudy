@@ -77,3 +77,4 @@ body {
     background: orange url('LE.jpg')
     no-repeat center / cover;
     height: calc(100vh - 97px);
+}
