@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .main {
+        width: 75%;
+        margin: 50px auto 0;
+        background: rgb(192, 189, 189);
+        border: 3px double #000;
+      }
+      .main h1 {
+        text-align: center;
+        font-family: '궁서체',serif;
+      }
+      .main .sub {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        background: #1f1e1e;
+        border-bottom: 3px solid rgb(165, 164, 164);
+      }
+      .main .sub h3 {
+        font-size: 17px;
+        color: #fff;
+        line-height: 35px;
+      }
+      .main .sub h3 span {
+        color: yellow;
+        font-size: 1.1em;
+      }
+
+      .main .wrap {
+        width: 100%;
+        background: #888;
+        /* margin-top: -11px; */
+      }
+
+      .main .wrap .content1 {
+        width: 170px;
+        height: 300px;
+        background: red;
+        margin: 25px 5px 20px 10px;
+        border: 1px solid #fff;
+        float: left;
+      }
+      .main .wrap .content2 {
+        width: 170px;
+        height: 300px;
+        background: pink;
+        margin: 25px 5px 20px 10px;
+        border: 1px solid #fff;
+        float: left;
+      }
+      .main .wrap .content3 {
+        width: 170px;
+        height: 300px;
+        background: orange;
+        margin: 25px 5px 20px 10px;
+        border: 1px solid #fff;
+        float: left;
+      }
+      .main .wrap .content4 {
+        width: 170px;
+        height: 300px;
+        background: yellow;
+        margin: 25px 0px 20px 10px;
+        border: 1px solid #fff;
+        float: left;
+      }
+
+      .main .wrap .content1 .img1 {
+        background: url("f4.jpg") no-repeat center / cover;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #fff;
+        margin: 10px auto 10px;
+      }
+      .main .wrap .content2 .img2 {
+        background: url("f2.jpg") no-repeat center / cover;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #fff;
+        margin: 10px auto 10px;
+      }
+      .main .wrap .content3 .img3 {
+        background: url("f3.jpg") no-repeat center / cover;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #fff;
+        margin: 10px auto 10px;
+      }
+      .main .wrap .content4 .img4 {
+        background: url("f1.jpg") no-repeat center / cover;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #fff;
+        margin: 10px auto 10px;
+      }
+      .main .wrap p {
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .main .wrap .imgwrap {
+        margin: 0 auto 0;
+      }
+      .main .wrap .imgwrap .sort {
+        margin: 0 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>나의 아름다운 정원</h1>
+      <div class="sub">
+        <h3>
+          사람들은 아마 자신에게 <span>자신감을 북돋워 주는</span> 표정있는 꽃들을 선호할
+          것이다.
+        </h3>
+      </div>
+      <div class="wrap clearfix">
+        <div class="imgwrap">
+          <div class="content1">
+            <div class="img1"></div>
+            <div class="sort">
+              <p>
+                너무 화려하지 않으며 고귀한 느낌을 가지고 있다. 붉은 색이 단연
+                으뜸이며 한 송이만 있어도 빼어나다.
+              </p>
+            </div>
+          </div>
+          <div class="content2">
+            <div class="img2"></div>
+            <div class="sort">
+              <p>
+                드물게 푸른색을 띠고 있으며 작지만 시원해 보이는 어린 꽃이라고
+                할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+              </p>
+            </div>
+          </div>
+          <div class="content3">
+            <div class="img3"></div>
+            <div class="sort">
+              <p>
+                색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로 매우
+                완숙한 이미지를 풍기는 꽃이다.
+              </p>
+            </div>
+          </div>
+          <div class="content4">
+            <div class="img4"></div>
+            <div class="sort">
+              <p>
+                태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에 속하며 송이가
+                적어야 제격이다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
