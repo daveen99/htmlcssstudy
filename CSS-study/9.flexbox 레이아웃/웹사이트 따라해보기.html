@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../common.css">
+
+    <style>
+        .header {
+            width: 100%;
+            height: 100px;
+            background: rgba(136, 136, 136, 0.5);
+            align-content: center;
+            display: flex;
+            flex-flow: row wrap;
+            position: fixed;
+        }
+        .header img {
+            width: 200px;
+            margin-left: 30px;
+            opacity: 1.0;
+            
+        }
+        .header .main-nav .main-nav__items {
+            display: flex;
+            margin-top: 42px;
+            
+        }
+        .header .main-nav .main-nav__items li {
+            list-style:none
+        }
+        .header .main-nav .main-nav__items li:first-child {
+            margin-left: 50px;
+        }
+        .header .main-nav .main-nav__items li a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: 700;
+        }
+
+        #product-overview {
+            background: url('../../img/vis_4.jpg')
+            no-repeat center / cover;
+            height: calc(100vh);
+            background-attachment: fixed;
+        }
+
+        .sitemenu {
+            width: 100%;
+            background: #fff;
+            height: 3000px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sitemenu h1 {
+            font-size: 3.0em;
+            font-weight: 700;
+            text-align: center;
+
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        .sitemenu h3 {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .sitemenu .box{
+            width: 100%;
+            display: flex;
+            padding: 40px 5% 0;
+            justify-content: center;
+        }
+        .sitemenu .box img {
+            width: 100%;
+            height: 70%;
+            transition: all 0.5s linear;
+            
+        }
+        .sitemenu .box div {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sitemenu .box img:hover {
+            transform: scale(1.4);
+        }
+
+        #product-overview p {
+            color: #fff;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 5px 5px 5px gray;
+            line-height: 60px;
+        }
+        #product-overview span {
+            font-size: 25px;
+            text-shadow: 2px 2px 3px gray;
+        }
+        #product-overview a {
+            font-size: 25px;
+            text-shadow: 2px 2px 3px gray;
+
+            border: 3px solid #fff;
+            border-radius: 15px;
+            padding: 0 20px;
+        }
+        .sitemenu .box .textwrap{
+            padding: 20px;
+        }
+        .sitemenu .box .textwrap h3{
+            text-align: left;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="header">
+        <h1>
+            <a href="#" class="header-left">
+                <img src="../../img/logo1.png" alt="">
+            </a>
+        </h1>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">회사소개</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">사업영역</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">투자정보</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">인재채용</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-overview">
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <p>Lorem ipsum dolor<br> sit amet,<br>
+            consectetur<br> adipisicing elit.<br>
+             Laudantium<br> fugacommodi<br> aliquam, mollitia illo<br>
+              non! possimus<br> eveniet impedit.<br>
+                <span>창의적이고 경쟁력 있는 IT 선도기업</span>
+                <br><a href="#">View More -></a></p>
+        </section>
+    </main>
+
+    <div class="sitemenu">
+        <h1>ABOUT Veen Holdings.</h1>
+        <h3>대한민국 대표 IT기업, Veen Holdings를 소개합니다.</h3>
+        <div class="box">
+            <div class="content1">
+                <img src="../../img/about_1.jpg" alt="">
+                <div class="textwrap">
+                    <h3>회사소개</h3>
+                    <p>삶의 가치를 높이는 기업, veen Holdings</p>
+                </div>
+            </div>
+            <div class="content2">
+                <img src="../../img/about_2.jpg" alt="">
+                <div class="textwrap">
+                    <h3>중앙연구소</h3>
+                    <p>설립 이래 한결 같은 자세로 기술 개발에 전념해 오고있습니다.</p>
+                </div>
+            </div>
+            <div class="content3">
+                <img src="../../img/about_3.jpg" alt="">
+                <div class="textwrap">
+                    <h3>투자정보</h3>
+                    <p>veen Holdings의 주요 경영사항을 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
