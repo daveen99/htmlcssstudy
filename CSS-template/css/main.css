@@ -1,8 +1,11 @@
 @import url('../../common.css');
-
 /* Noto Sans KR  폰트 (구글폰트) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Pangolin&display=swap');
+@import url('main-tablet.css');
 
+
+
+/* 큰 와이드 화면 1920x1080해상도 */
 
 body {
     font-size: 15px;
@@ -365,3 +368,5 @@ footer .go-top {
     right: 50px;
     bottom: 60px;
 }
+
+
