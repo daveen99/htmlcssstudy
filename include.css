@@ -5,6 +5,7 @@
     padding: 30px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     position: fixed;
     width: 100%;
@@ -65,6 +66,11 @@
 }
 
 /*  */
+
+/* 모바일 전용버튼 */
+.main-header .mobile-menu-btn {
+    display: none;
+}
 
 /* footer style  */
 .main-footer {
