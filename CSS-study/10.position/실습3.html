@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="art.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: rgb(161, 161, 161);
+        }
+
+        #wrapper {
+            width: 90%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+
+            margin: 0 auto;
+        }
+        #wrapper header {
+            width: 100%;
+        }
+        #wrapper header h1{
+            background: orange;
+            color: #fff;
+            font-size: 69px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+
+
+        }
+        #wrapper header span {
+            font-size: 13px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        #wrapper header .stit {
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            background: rgb(204, 204, 204);
+            padding: 3px 0 3px 0;
+        }
+
+        #wrapper .container {
+            display: flex;
+            
+        }
+
+        #wrapper .container .side-menu {
+            width: 20%;
+        }
+        #wrapper .container .side-menu h3 {
+            background: rgb(175, 0, 0);
+            color: #fff;
+            padding-left: 7px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        #wrapper .container .side-menu li a {
+            color: #000;
+            font-weight: 700;
+            margin: 10px;
+            display: flex;
+            font-size: 12px;
+            
+            
+        }
+        #wrapper .container .main-content {
+            width: 60%;
+
+            display: flex;
+            flex-direction: column;
+            
+            background: rgb(235, 234, 234);
+            padding: 20px 10px 0px 10px;
+        }
+        #wrapper .container .main-content .art-piece {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #wrapper .container .main-content .art-piece .title {
+            margin: 5px;
+            color: #fff;
+            font-size: 15px;
+            
+        }
+        #wrapper .container .main-content .art-piece .title a{
+            color: #fff;
+            text-decoration: none;
+            background: #0b285e;
+            padding: 3px;
+            display: flex;
+        }   
+        #wrapper .container .main-content .art-piece .artist {
+            color: #0b285e;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+
+        #wrapper .container .main-content .art-piece .detail {
+            color: #0b285e;
+            font-size: 5px;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+        #wrapper .container .banner {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 10px;
+            
+        }
+        #wrapper .container .banner .all {
+            color: #868686;
+            font-weight: 700;
+            text-decoration-line: underline;
+            display: flex;
+
+            margin-bottom: 6px;
+        }
+        #wrapper .container .banner .love {
+            color: orange;
+            font-weight: 700;
+            display: flex;
+
+            margin-bottom: 6px;
+        }
+        #wrapper .container .banner strong {
+            font-weight: 700;
+        }
+
+        #wrapper .container .link {
+            margin-top:  20px;
+
+        }
+        #wrapper .container .link li {
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        #wrapper .container .link li a {
+            color: #000;
+            font-weight: 700;
+        }
+
+        #wrapper footer {
+            background: #0b285e;
+            padding: 10px;
+            font-size: 12px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #wrapper footer a {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            <h1>Musée d'Orsay<span>Musée d'Orsay Musée d'Orsay
+                    Musée d'Orsay Musée d'Orsay Musée d'Orsay</span>
+            </h1>
+            <h2 class="stit">
+                Royal Academy of Arts, THE REAL VANGOGH THE ARTIST AND HIS LETTERS
+            </h2>
+        </header>
+        <!-- //end header -->
+
+        <div class="container clearfix">
+            <aside class="side-menu">
+                <h3>ARTIST</h3>
+                <ul>
+                    <li><a href="#">작가의 작품</a></li>
+                    <li><a href="#">작가의 시대</a></li>
+                    <li><a href="#">작가의 일생</a></li>
+                </ul>
+            </aside>
+
+            <div class="main-content">
+                <div class="art-piece">
+                    <h4 class="title"><a href="#">피리부는 소년</a></h4>
+                    <div class="artist">에두아르마네</div>
+                    <p class="detail">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm</p>
+                </div>
+                <div class="art-piece">
+                    <h4 class="title"><a href="#">고흐의 방</a></h4>
+                    <div class="artist">빈센트반고흐</div>
+                    <p class="detail">1889 캔버스에 유채,57.5*74cm,파리 오르세 Vincent Van GOGH,La Chambre de Van Gogh, H/T,
+                        57.5*74cm</p>
+                </div>
+                <div class="art-piece">
+                    <h4 class="title"><a href="#">황색 그리스도가 있는 화가의 자화상</a></h4>
+                    <div class="artist">폴 고갱</div>
+                    <p class="detail">1890-1891 캔버스에 유채,38*46cm,파리 오르세 Paul Gauguin Portrait de I'artiste au Paul
+                        Gauguin, H/T, 38*46cm</p>
+                </div>
+                <div class="art-piece">
+                    <h4 class="title"><a href="#">오페라좌의 관현악단</a></h4>
+                    <div class="artist">에드가 드가</div>
+                    <p class="detail">1868-1869 캔버스에 유채,32*46cm,파리 오르세 Edgar Degas, L'orchestre de I'Opera H/T, 38*46cm
+                    </p>
+                </div>
+                <div class="art-piece">
+                    <h4 class="title"><a href="#">만종</a></h4>
+                    <div class="artist">장 프랑수아 밀레</div>
+                    <p class="detail">1857-1859 캔버스에 유채,55.5*66cm,파리 오르세 Jean-Franqois Millet, L'Angelus H/T, 55.5*66cm
+                    </p>
+                </div>
+                <div class="art-piece">
+                    <h4 class="title"><a href="#">제비꽃장식을 단 베르트모리조</a></h4>
+                    <div class="artist">에두아르마네</div>
+                    <p class="detail">1872 Eduouard Manet Berthe Morisot au bouquet de H/T, 55*38cm</p>
+                </div>
+            </div>
+
+            <aside class="banner">
+                <h3><span class="all">전세계인들에게</span><span class="love">제일 사랑받는</span><strong>서양미술사의 시대</strong></h3>
+                <ul class="link">
+                    <li><a href="#">Workshop Go</a> <span>Life drowing workshop</span></li>
+                    <li><a href="#">Summer exhibition</a> <span>A-level Summer Exhibition Online 2010</span></li>
+                    <li><a href="#">RA collection</a> <span>RA Collections</span></li>
+                </ul>
+            </aside>
+
+        </div>
+        <!-- // end container -->
+
+        <footer>
+            <address>&copy; 2012 Les Amis du Musée d'Orsay. All rights reserved.
+                <a href="#">amis@amis-musee-orsay.org</a>
+                <span>Legal status</span>
+            </address>
+        </footer>
+
+    </div>
+    <!-- // end wrapper -->
+</body>
+
+</html>
